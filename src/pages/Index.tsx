@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import SiteNavbar from "@/components/SiteNavbar";
+import SiteFooter from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -28,9 +29,9 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-background text-foreground flex flex-col">
       <SiteNavbar />
-      <main>
+      <main className="flex-1">
         {/* Hero */}
         <section id="home" className="relative overflow-hidden">
           <div
@@ -41,13 +42,13 @@ const Index = () => {
             <div className="max-w-3xl animate-enter">
               <span className="inline-flex items-center gap-2 rounded-full bg-accent/30 px-3 py-1 text-xs">
                 <span className="h-2 w-2 rounded-full bg-primary" />
-                Bridging Finance and Technology with Code
+                A young guy who loves to improve every day
               </span>
               <h1 className="mt-6 font-display text-4xl md:text-6xl leading-tight">
-                Computational Finance & Computer Science Portfolio
+                Welcome to Samuel's Portfolio
               </h1>
               <p className="mt-4 text-muted-foreground text-lg">
-                Year 2 double degree student at City University of Hong Kong. Highest semester GPA 3.68. Recipient of the Li Dak Sum Yip Yio Chin Scholarship (2023/2024).
+                "It's not about how much you have, it's how you use it."
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#projects"><Button>Explore Projects</Button></a>
@@ -60,7 +61,7 @@ const Index = () => {
                       <DialogTitle>About Me</DialogTitle>
                     </DialogHeader>
                     <p>
-                      I am a Year 2 double degree student at City University of Hong Kong, pursuing a Bachelor of Science in Computational Finance & Financial Technology and a Bachelor of Science in Computer Science with a Minor in Mathematics. My academic journey equips me with a robust skill set at the intersection of finance and technology, demonstrated by a highest semester GPA of 3.68 and the Li Dak Sum Yip Yio Chin Scholarship (2023/2024).
+                      I love fitness training, coding, and trading. Feel free to explore my projects and get in touch :D
                     </p>
                   </DialogContent>
                 </Dialog>
@@ -75,10 +76,9 @@ const Index = () => {
             <div>
               <h2 className="font-display text-3xl md:text-4xl">About Me</h2>
               <p className="mt-4 text-muted-foreground">
-                I am a Year 2 double degree student at City University of Hong Kong, pursuing a Bachelor of Science in Computational Finance & Financial Technology and a Bachelor of Science in Computer Science with a Minor in Mathematics. My academic journey equips me with a robust skill set at the intersection of finance and technology.
+                I am a Year 3 dual-degree student at CityUHK, majoring in Computational Finance and Computer Science with a Minor in Mathematics. I'm interested in quantitative finance, software development, and data analytics. My goal is to leverage technology to solve complex financial problems and create innovative solutions. Feel free to reach out if you want to collaborate or just chat!
               </p>
               <div className="mt-6 flex gap-3">
-                <Button onClick={() => toast({ title: 'Resume placeholder', description: 'A downloadable resume will be added.' })}>Download Resume</Button>
                 <a href="#connect"><Button variant="secondary">Contact Me</Button></a>
               </div>
             </div>
@@ -90,12 +90,12 @@ const Index = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {[
-                    'Python','Flask','FastAPI','Data Analytics','Java','C++','JavaScript','React','Tailwind CSS','MongoDB','SQL','R','Matlab','English','Mandarin','Cantonese'
+                    'Python', 'C++', 'Java', 'Quantitative Method', 'Derivative', 'Trading Strategy', 'Machine Learning', 'Data Analytics', 'Data Visualization', ,'Portfolio Mangement', 'Matlab', 'React', 'R', 'VBA'
                   ].map(s => (<Badge key={s} variant="secondary">{s}</Badge>))}
                 </div>
                 <div className="mt-4 space-y-2">
-                  <div className="flex items-center gap-2 text-sm"><GraduationCap className="h-4 w-4"/> Bloomberg Market Concept & ESG (2024)</div>
-                  <div className="flex items-center gap-2 text-sm"><GraduationCap className="h-4 w-4"/> Fintech Trailblazers: Blockchain, DeFi, Cryptocurrency (2024)</div>
+                  <div className="flex items-center gap-2 text-sm"><GraduationCap className="h-4 w-4"/>  Citi Markets Quantitative Analysis (Vitual Internship)</div>
+                  <div className="flex items-center gap-2 text-sm"><GraduationCap className="h-4 w-4"/>  Bloomberg Market Concept & Bloomberg ESG (2024) </div>
                 </div>
               </CardContent>
             </Card>
@@ -108,7 +108,7 @@ const Index = () => {
             <div className="max-w-2xl">
               <h2 className="font-display text-3xl md:text-4xl">Extracurricular Activity</h2>
               <p className="mt-3 text-muted-foreground">
-                I actively broaden my horizons through case competitions, leadership roles, and workshops. Notable activities include serving as a Palse Leader (Tutor of Calculus Study Group), Student Mentor for the Department of Computer Science (2024–Present), and participating in the 2024 Deloitte Club Ushine Case Competition and HSBC Global Private Banking Case Challenge 2024.
+                I actively broaden my horizons and network with others through case competitions, leadership roles, and workshops, Including: <br />1. Palsi Leader (Tutor of Calculus Study Group)<br />2. Student Mentor, Department of Computer Science (2024–Present) <br />3. Deloitte Club Ushine Case Competition (May 2024–Jul 2024) <br />4. HSBC Global Private Banking Case Challenge 2024
               </p>
               <Dialog>
                 <DialogTrigger asChild>
@@ -159,25 +159,13 @@ const Index = () => {
             <AccordionItem value="oakcean">
               <AccordionTrigger>Oakcean Capital, Quantitative Strategist Intern (Aug 2025–Sep 2025)</AccordionTrigger>
               <AccordionContent>
-                Developed a statistical arbitrage strategy using over 10 years of SSE data to identify trading opportunities with Python. Automated data processing workflows using MongoDB and implemented the Power Method algorithm in C++ to enhance SVD model performance.
+                - Developed a statistical arbitrage strategy utilizing over 10 years of datasets from the Shanghai Stock Exchange (SSE) to identify trading opportunities using Python. <br /> - Automated data processing workflows by leveraging MongoDB for efficient data management and retrieval. <br /> - Implemented the Power Method algorithm in C++ to enhance computational efficiency and improve Singular Value Decomposition (SVD) model performance.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="snapfeedback">
               <AccordionTrigger>SnapFeedback Limited, Full Stack Developer Intern (Jun 2025–Aug 2025)</AccordionTrigger>
               <AccordionContent>
-                Tested 6+ deep learning models for real-time computer vision and NLP projects, proposing plugins using Python, PyTorch, and Scikit-learn. Developed a full-stack web application using React, Python, FastAPI, and Supabase, contributing to the entire development lifecycle.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="citi">
-              <AccordionTrigger>Citi Markets Quantitative Analysis, Virtual Internship (Jun 2025)</AccordionTrigger>
-              <AccordionContent>
-                Analyzed market data and geopolitical factors to price commodity futures and formulate hedging strategies. Structured securities products and implemented risk management frameworks to optimize performance across Citi's market trade units.
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="hsbc">
-              <AccordionTrigger>HSBC Global Private Banking Case Challenge 2024, Participant (Sep 2024)</AccordionTrigger>
-              <AccordionContent>
-                Constructed multi-asset portfolios optimizing ESG mandates and risk parameters, analyzing 10+ securities across fixed income, equities, and thematic investments.
+                - Tested 6+ deep learning models for real-time computer vision and NLP projects, proposing plugins using Python, PyTorch, and Scikit-learn. <br /> - Developed a full-stack web application using React, Python, FastAPI, and Supabase, contributing to the entire development lifecycle.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -199,7 +187,9 @@ const Index = () => {
                 <CardContent>
                   <p>Streamlit and SciPy-based web application for Black-Scholes Model and Greeks analysis, featuring 4+ dynamic heatmaps to visualize market volatility and spot price relationships.</p>
                   <div className="mt-4">
-                    <Button variant="secondary">View Details</Button>
+                    <a href="https://github.com/wcwong462/Interactive-Option-Pricing-Model-With-Heatmap-Analysis" target="_blank" rel="noopener noreferrer">
+                      <Button variant="secondary">View on GitHub</Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -212,7 +202,9 @@ const Index = () => {
                 <CardContent>
                   <p>Python-based tool maximizing Sharpe ratios for ETF and equity portfolios, leveraging pandas, NumPy, SciPy, yfinance, and FredAPI for advanced financial modeling.</p>
                   <div className="mt-4">
-                    <Button variant="secondary">View Details</Button>
+                    <a href="https://github.com/wcwong462/Python-Portfolio-Optimization-Project" target="_blank" rel="noopener noreferrer">
+                      <Button variant="secondary">View on GitHub</Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -254,7 +246,7 @@ const Index = () => {
                   <CardDescription>Connect with me to see my professional journey and network!</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                  <a href="https://www.linkedin.com/in/samuelwong1114/" target="_blank" rel="noreferrer">
                     <Button>Visit LinkedIn</Button>
                   </a>
                 </CardContent>
@@ -265,7 +257,7 @@ const Index = () => {
                   <CardDescription>Check out my academic and personal projects, including my option pricing tool and portfolio optimization code!</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <a href="https://github.com/" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/wcwong462" target="_blank" rel="noreferrer">
                     <Button>Visit GitHub</Button>
                   </a>
                 </CardContent>
@@ -283,11 +275,12 @@ const Index = () => {
             <Textarea className="sm:col-span-2" placeholder="Message" required />
             <div className="sm:col-span-2 flex gap-3">
               <Button type="submit">Send</Button>
-              <a href="mailto:example@email.com" className="inline-flex"><Button type="button" variant="secondary"><Mail className="mr-2 h-4 w-4"/>Email</Button></a>
+              <a href="mailto:wcwong462.samuel@gmail.com" className="inline-flex"><Button type="button" variant="secondary"><Mail className="mr-2 h-4 w-4"/>Email</Button></a>
             </div>
           </form>
         </section>
-      </main>
+  </main>
+  <SiteFooter />
 
       <footer className="border-t">
         <div className="container py-8 text-sm text-muted-foreground">

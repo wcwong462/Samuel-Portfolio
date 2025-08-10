@@ -48,15 +48,16 @@ All colors MUST be HSL.
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Brand + gradients */
-    --brand: 220 90% 56%;
-    --brand-2: 162 84% 40%;
-    --brand-foreground: 210 40% 98%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(var(--brand) / 0.9), hsl(var(--brand-2) / 0.9));
-    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted) / 0.4));
+  --brand: 245 100% 60%; /* vibrant blue-purple */
+  --brand-2: 288 80% 60%; /* vibrant purple-pink */
+  --brand-foreground: 210 40% 98%;
 
-    --shadow-soft: 0 10px 30px -10px hsl(var(--brand) / 0.25);
-    --shadow-glow: 0 0 40px hsl(var(--brand-2) / 0.35);
+  --gradient-primary: linear-gradient(135deg, hsl(var(--brand) / 0.95), hsl(var(--brand-2) / 0.95));
+  --gradient-subtle: linear-gradient(120deg, hsl(var(--background)), hsl(var(--brand-2) / 0.15));
+
+  --shadow-soft: 0 10px 30px -10px hsl(var(--brand-2) / 0.25);
+  --shadow-glow: 0 0 40px hsl(var(--brand) / 0.35);
 
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
