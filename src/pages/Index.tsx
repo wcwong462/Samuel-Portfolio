@@ -4,14 +4,13 @@ import SiteFooter from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import { Github, Linkedin, Trophy, Users, Briefcase, GraduationCap, BarChart3, Brain, Mail } from "lucide-react";
+import { Github, Linkedin, Trophy, Users, BarChart3, Brain, Mail } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 const Index = () => {
@@ -33,7 +32,7 @@ const Index = () => {
       <SiteNavbar />
       <main className="flex-1">
         {/* Hero */}
-        <section id="home" className="relative overflow-hidden">
+  <section id="home" className="relative overflow-hidden bg-gradient-to-br from-purple-500 via-blue-500 to-pink-500">
           <div
             className="pointer-events-none absolute inset-0 interactive-spotlight"
             style={{ ['--x' as any]: `${pos.x}px`, ['--y' as any]: `${pos.y}px` }}
@@ -47,7 +46,7 @@ const Index = () => {
               <h1 className="mt-6 font-display text-4xl md:text-6xl leading-tight">
                 Welcome to Samuel's Portfolio
               </h1>
-              <p className="mt-4 text-muted-foreground text-lg">
+              <p className="mt-4 text-white text-lg">
                 "It's not about how much you have, it's how you use it."
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
@@ -94,8 +93,8 @@ const Index = () => {
                   ].map(s => (<Badge key={s} variant="secondary">{s}</Badge>))}
                 </div>
                 <div className="mt-4 space-y-2">
-                  <div className="flex items-center gap-2 text-sm"><GraduationCap className="h-4 w-4"/>  Citi Markets Quantitative Analysis (Vitual Internship)</div>
-                  <div className="flex items-center gap-2 text-sm"><GraduationCap className="h-4 w-4"/>  Bloomberg Market Concept & Bloomberg ESG (2024) </div>
+                  <div className="flex items-center gap-2 text-sm">🎓 Citi Markets Quantitative Analysis (Virtual Internship)</div>
+                  <div className="flex items-center gap-2 text-sm">🎓 Bloomberg Market Concept & Bloomberg ESG (2024)</div>
                 </div>
               </CardContent>
             </Card>
@@ -110,22 +109,9 @@ const Index = () => {
               <p className="mt-3 text-muted-foreground">
                 I actively broaden my horizons and network with others through case competitions, leadership roles, and workshops, Including: <br />1. Palsi Leader (Tutor of Calculus Study Group)<br />2. Student Mentor, Department of Computer Science (2024–Present) <br />3. Deloitte Club Ushine Case Competition (May 2024–Jul 2024) <br />4. HSBC Global Private Banking Case Challenge 2024
               </p>
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button className="mt-6">Know More</Button>
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle>Activities Details</DialogTitle>
-                  </DialogHeader>
-                  <ul className="list-disc pl-5 space-y-2 text-sm">
-                    <li>Palse Leader (Tutor of Calculus Study Group)</li>
-                    <li>Student Mentor, Department of Computer Science (2024–Present)</li>
-                    <li>Deloitte Club Ushine Case Competition (May 2024–Jul 2024)</li>
-                    <li>HSBC Global Private Banking Case Challenge 2024</li>
-                  </ul>
-                </DialogContent>
-              </Dialog>
+              <a href="/Activities">
+                <Button className="mt-6">Know More</Button>
+              </a>
             </div>
 
             <div className="mt-10">
@@ -186,9 +172,12 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p>Streamlit and SciPy-based web application for Black-Scholes Model and Greeks analysis, featuring 4+ dynamic heatmaps to visualize market volatility and spot price relationships.</p>
-                  <div className="mt-4">
+                  <div className="mt-4 flex gap-3">
                     <a href="https://github.com/wcwong462/Interactive-Option-Pricing-Model-With-Heatmap-Analysis" target="_blank" rel="noopener noreferrer">
                       <Button variant="secondary">View on GitHub</Button>
+                    </a>
+                    <a href="https://interactive-option-pricing-model-with-heatmap-analysis-4icrdwd.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline">Try the Interactive Tool</Button>
                     </a>
                   </div>
                 </CardContent>
