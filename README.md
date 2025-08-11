@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
+#Samuel Wong's Portfolio
 
-## Project info
+Welcome to my personal portfolio website, showcasing my academic journey, professional experiences, projects, and skills as a Year 2 double degree student at City University of Hong Kong, pursuing a Bachelor of Science in Computational Finance & Financial Technology and a Bachelor of Science in Computer Science with a Minor in Mathematics. This project, built with modern web technologies, highlights my expertise at the intersection of finance and technology.
+🔗 Live Site: https://wcwong462.github.io/Samuel-Portfolio🔗 Lovable Project: https://lovable.dev/projects/ac0e61db-092e-4df5-b339-700c88133ac8
 
-**URL**: https://lovable.dev/projects/ac0e61db-092e-4df5-b339-700c88133ac8
+##About Me
+I am passionate about leveraging technology to solve financial challenges. My academic coursework includes Stochastic Calculus, Probability & Statistics, Software Design, and Problem Solving and Programming. I actively contribute as a Palse Leader (Calculus Study Group Tutor) and Student Mentor in the Department of Computer Science.
+Features
 
-## How can I edit this code?
+##About Me: Introduction to my academic background and achievements.
+Extracurricular Activities: Highlights of my participation in case competitions (e.g., 2024 Deloitte Club Ushine Case Competition, HSBC Global Private Banking Case Challenge 2024) and leadership roles.
+Experience: Details of my internships, including:
+Oakcean Capital, Quantitative Strategist Intern (Aug 2025–Sep 2025): Developed statistical arbitrage strategies using Python and MongoDB.
+SnapFeedback Limited, Full Stack Developer Intern (Jun 2025–Aug 2025): Built a full-stack web app with React, FastAPI, and Supabase.
+Citi Markets Quantitative Analysis, Virtual Internship (Jun 2025): Priced commodity futures and structured securities products.
 
-There are several ways of editing your application.
 
-**Use Lovable**
+##Projects: Showcases key projects like:
+Interactive Option Pricing & Greeks Analysis Tool (Jul 2025): A Streamlit-based app for Black-Scholes Model analysis with dynamic heatmaps.
+Portfolio Optimisation Tool (Jan 2025): A Python-based tool maximizing Sharpe ratios using pandas, NumPy, and yfinance.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/ac0e61db-092e-4df5-b339-700c88133ac8) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+##Skills & Certifications: Proficient in Python, Java, C++, JavaScript, React, Tailwind CSS, MongoDB, SQL, R, Matlab, and certified in Bloomberg Market Concept, Bloomberg ESG, and Fintech Trailblazers (2024).
+Connect: Links to my LinkedIn and GitHub profiles.
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
+##Tech Stack
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Vite: Fast and modern build tool for web development.
+TypeScript: Adds static typing for robust JavaScript development.
+React: Component-based library for building interactive UIs.
+shadcn-ui: Reusable UI components for a polished interface.
+Tailwind CSS: Utility-first CSS framework for rapid, responsive styling.
 
-## How can I deploy this project?
+##Getting Started
+**Prerequisites
 
-Simply open [Lovable](https://lovable.dev/projects/ac0e61db-092e-4df5-b339-700c88133ac8) and click on Share -> Publish.
+Node.js & npm: Install using nvm for managing Node versions.
 
-## Can I connect a custom domain to my Lovable project?
+Editing the Code
+You can edit this project in several ways:
+1. Use Lovable
 
-Yes, you can!
+Visit the Lovable Project and start prompting.
+Changes made via Lovable are automatically committed to this repository.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+2. Use Your Preferred IDE
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Clone the repository:git clone https://github.com/wcwong462/Samuel-Portfolio.git
+
+
+Navigate to the project directory:cd Samuel-Portfolio
+
+
+Install dependencies:npm install
+
+
+Start the development server with auto-reloading:npm run dev
+
+
+Push changes to reflect them in Lovable.
+
+3. Edit Directly in GitHub
+
+Navigate to the desired file in the repository.
+Click the "Edit" button (pencil icon) and commit changes.
+
+4. Use GitHub Codespaces
+
+Go to the repository’s main page.
+Click the "Code" button, select the "Codespaces" tab, and create a new Codespace.
+Edit files within the Codespace and commit/push changes.
+
+##Contributing
+This is a personal portfolio project, but I welcome feedback! Feel free to open an issue or submit a pull request for suggestions or improvements.
+Contact
+
+📧 Email: wcwong462.samuel@gmail.com
+📱 Phone: (852) 59301819
+🔗 LinkedIn: wcwong462
+💻 GitHub: wcwong462
+
+License
+© 2025 Samuel Wong. All rights reserved.
